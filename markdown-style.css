@@ -1,14 +1,54 @@
+/* Default base for all code */
 code,
 pre {
   font-family: 'Fira Code', 'JetBrains Mono', Consolas, Menlo, monospace !important;
   font-size: 14px;
   line-height: 1.6;
   letter-spacing: 0.2px;
+  color: #f8f8f2; /* Default text */
+  background-color: #1e1e1e !important;
 }
 
-pre {
-  background-color: #1e1e1e !important;
-  border-radius: 6px;
-  padding: 12px !important;
-  overflow-x: auto;
+/* Syntax highlighting */
+.hljs-comment,
+.hljs-quote {
+  color: #6a9955; /* hijau komentar */
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #c586c0; /* ungu keyword */
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #b5cea8; /* angka dan literal */
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #ce9178; /* string merah muda */
+}
+
+.hljs-title,
+.hljs-section {
+  color: #569cd6; /* biru function/section */
+}
+
+.hljs-type,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #4ec9b0; /* cyan */
+}
+
+.hljs-attribute,
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #dcdcaa; /* kuning */
 }
